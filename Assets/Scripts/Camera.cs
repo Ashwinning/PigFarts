@@ -13,12 +13,12 @@ public class Camera : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-
+		MoveUp();
 	}
 
 	void MoveUp ()
 	{
-		transform.Translate(Vector3.up * Player.MoveSpeed);
+		transform.Translate(Vector3.up * (Player.MoveSpeed - 0.02f));
 	}
 
 }
